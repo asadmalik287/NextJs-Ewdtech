@@ -1,0 +1,422 @@
+@media only screen and (min-width: 1650px) {
+  .book-meeting-home-col-1 {
+    width: 34% !important;
+    transform: scale(1.1);
+    margin-left: 59px;
+    margin-top: 47px;
+  }
+
+  .book-meeting-home-col-2 {
+    width: 66% !important;
+
+    z-index: -1;
+    left: -65px;
+  }
+
+  .bookMettingBgImage {
+    padding: 80px 40px 80px 40px;
+  }
+}
+
+@media only screen and (min-width: 1450px) and (max-width: 1600px) {
+  .book-meeting-home-col-1 {
+    width: 40% !important;
+  }
+
+  .book-meeting-home-col-2 {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1450px) {
+  .maindPadding {
+    padding-left: 81px !important;
+    padding-right: 81px !important;
+  }
+
+  .book-meeting-home-col-1 {
+    width: 51% !important;
+  }
+
+  .book-meeting-home-col-2 {
+    width: 64% !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1450px) {
+  .book-meeting-home-col-1 {
+    width: 51% !important;
+    margin-top: -33px;
+  }
+
+  .book-meeting-home-col-2 {
+    width: 64% !important;
+  }
+
+  .maindPadding {
+    padding-left: 101px;
+    padding-right: 101px;
+  }
+
+  .bookMettingBgImage {
+    padding: 60px 40px 60px 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .counter .counter-child {
+    width: 49% !important;
+    margin-bottom: 20px;
+  }
+
+  .client-logos .client-logos-child {
+    width: 49% !important;
+  }
+
+  .bookMettingBgImage {
+    padding: 60px 40px 60px 40px;
+  }
+
+  .team-col {
+    width: 49% !important;
+  }
+
+}
+
+.smHomwMeeting {
+  display: none;
+}
+
+/* FOR WEB MEDIA QUERY  */
+@media only screen and (max-width: 400px) {
+  .webHomwMeeting {
+    display: none;
+  }
+
+  .mobile-app .styles_row__2gmnz {
+    display: flex;
+  }
+
+  .nav-sm-btn {
+    padding: 0px !important;
+  }
+
+  .nav-sm-btn .calendly-badge-widget {
+    height: 45px;
+  }
+
+  .btnHeight {
+    height: 58px !important;
+  }
+
+  .banner-para {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .btnHeight svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .smHomwMeeting {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 345px) {
+
+  .home-hero-btn button {
+    padding: 10px 15px !important;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .maindPadding {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  nav {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.ewd-offic-video video {
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ewd-offic-video {
+  height: calc(100vh - 84px);
+}
+
+.banner-home-bg {
+  background-color: #00000070;
+
+}
+
+/* .video-main-banner::after {
+  height: calc(100vh - 84px);
+} */
+@media only screen and (max-width: 768px) {
+  .hero-title-home {
+    font-size: 27px !important;
+    padding: 6px;
+  }
+
+  .reviews-tt {
+    flex-direction: column;
+  }
+
+  .controls {
+    margin-top: 20px;
+  }
+
+  .slide-tt {
+    width: 45%;
+    flex: 0 0 45%;
+  }
+
+  .video-main-banner {
+    background-color: #000;
+  }
+
+  .ewd-offic-video {
+    height: 400px;
+  }
+
+  .joinTogether {
+    padding: 30px 0 !important;
+  }
+
+  .video-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .styles_carouselcontrolprev__Bmyua {
+    filter: brightness(0.5);
+  }
+
+  .styles_carouselcontrolnext__DoQ9- {
+    filter: brightness(0.5);
+
+  }
+
+  .navbarInnerUl {
+    padding-top: 0 !important;
+  }
+
+  /* .uiux .styles_row__2gmnz {
+    display: flex;
+  } */
+
+  .mainTitleBanners {
+    font-size: 25px;
+    line-height: 1.2;
+    padding-top: 13px;
+  }
+
+  #dropdownNavbar li {
+    padding: 5px !important;
+  }
+
+  /* .navbarUlLi .absolute {
+  position: static !important;
+  padding-top: 0 !important;
+} */
+  #dropdownNavbar {
+    padding: 10px !important;
+  }
+
+  .contactus-bg {
+    padding: 101px 15px 47px 15px !important;
+  }
+
+
+  .casesTabs {
+    margin-right: 0px !important;
+  }
+
+  .styles_thumbnail__19ffY {
+    height: 6vh !important;
+  }
+
+  .mainServicesBlock {
+    margin-top: 15px;
+    background: #fff;
+  }
+
+  .same_fifty_col {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .four__boxes {
+    width: 100%;
+    margin-top: 13px;
+  }
+
+  .four__boxes__mainCol {
+    margin-top: 0px !important;
+  }
+
+  .slide__2 img {
+    width: 194px !important;
+  }
+
+  .four__boxes {
+    padding-left: 0px;
+  }
+
+  .fourBlockCol1 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-top: 15px;
+  }
+
+  .fourBlockCol {
+    padding: 0px;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+  .social-services,
+  .col__services {
+    max-width: 100% !important;
+    padding: 0px !important;
+    flex: 0 0 100% !important;
+    margin-top: 15px;
+  }
+
+  .about-bg {
+    height: 63vh !important;
+  }
+
+  .formBottomImage {
+    display: none;
+  }
+
+  .mtaboutusCol2Sec1 {
+    margin-top: 20px;
+  }
+
+  .joinTogether {
+    padding: 65px 0;
+  }
+
+  .team-col {
+    width: 100% !important;
+  }
+
+  .aboutusSection2 {
+    margin-top: 50px !important;
+  }
+
+  .about-bg-color {
+    background: #E3E3E3;
+    width: 100% !important;
+    height: auto !important;
+    margin: auto;
+  }
+
+  .mainMarginTop {
+    margin-top: 50px !important;
+  }
+
+  .about-bg-color img {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+  }
+
+  .footer-col {
+    width: 49% !important;
+    margin-bottom: 20px;
+  }
+
+  .col-Services-home {
+    border: 0px !important;
+  }
+
+  .bookMettingBgImage {
+    padding: 90px 15px 90px 15px !important;
+  }
+
+  .client-logos .client-logos-child {
+    width: 49% !important;
+  }
+
+  nav {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .section-hero {
+    height: 63vh !important;
+  }
+
+  .counter .counter-child {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .maindPadding {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .navDiv {
+    background-color: #000;
+    border-radius: 16px;
+  }
+
+  .navDiv ul li {
+    padding: 10px 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .book-meeting-home-col-2 {
+    width: 100% !important;
+  }
+
+  .book-meeting-flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .book-meeting-home-col-1 {
+    width: 100% !important;
+    margin-top: 17px !important;
+    position: relative !important;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+  .book-meeting-home-col-2 {
+    width: 66%;
+    z-index: -1;
+    left: 0 !important;
+  }
+
+  .book-meeting-home-col-1 .book-meeting-home {
+    margin-top: 0px !important;
+  }
+
+  .book-meeting-home h1 {
+    line-height: 1.1 !important;
+  }
+}
+
+/* FOR WEB MEDIA QUERY  */

@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+
+.longdesc h1,
+.longdesc h2,
+.longdesc h3,
+.longdesc h4,
+.longdesc h5,
+.longdesc h6 {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: inherit !important;
+}
+
+.longdesc h1 *,
+.longdesc h2 *,
+.longdesc h3 *,
+.longdesc h4 *,
+.longdesc h5 *,
+.longdesc h6 * {
+  text-align: inherit !important;
+}
+
+.longdesc p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.longdesc ul li,
+.longdesc ol li {
+  list-style: disc;
+}
+
+.longdesc {
+  text-align: justify;
+}
+
+.longdesc ul li span:nth-child(1) {
+  /* font-weight: 700; */
+}
+
+.longdesc .btn_div a {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 20px;
+  color: #fff;
+  width: fit-content;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #10171e;
+  border-radius: 8px;
+  display: block;
+}
+.longdesc  a {
+    color: #16A085;
+    text-decoration: underline;
+}
+.longdesc ul,
+.longdesc ol {
+  padding-left: 30px;
+}
+
+.longdesc li P {
+  margin-top: 8px !important;
+}
+
+.longdesc img {
+  margin-top: 12px !important;
+  margin-bottom: 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .longdesc h1,
+  .longdesc h2,
+  .longdesc h3,
+  .longdesc h4,
+  .longdesc h5,
+  .longdesc h6 {
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: inherit !important;
+  }
+}
+
+.faqs-data li {
+  list-style: disc !important;
+}
