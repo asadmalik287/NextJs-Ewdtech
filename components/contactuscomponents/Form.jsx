@@ -63,7 +63,7 @@ const onSubmit = async (reqData) => {
 };
   return (
     <React.Fragment>
-      <section className="relative mainPaddingTop">
+      <section className="relative mainPaddingTop pb-24">
         <div className="contactusTopBg" />
         <div className="p-8 bg-16A085 md:w-6/12 m-auto relative">
           <h2 className="text-4xl text-white bold-font text-center ">

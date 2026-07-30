@@ -20,7 +20,7 @@ const Portfolio = () => {
           content="View EWDTech’s portfolio showcasing web design, SEO, ecommerce, branding, and digital marketing projects that deliver results for businesses across industries."
         />
 
-        <link rel="canonical" href="https://ewdtech.com/portfolio" />
+        <link rel="canonical" href="https://ewdtech.com/portfolio/" />
       </Head>
 
       <Navbar />

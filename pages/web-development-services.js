@@ -37,7 +37,7 @@ const Webdesigndevelopment = () => {
 
         <link
           rel="canonical"
-          href="https://ewdtech.com/web-development-services"
+          href="https://ewdtech.com/web-development-services/"
         />
       </Head>
 

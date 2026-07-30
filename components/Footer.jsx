@@ -45,7 +45,7 @@ export const Footer = () => {
           <div className="footer-col">
             <div className="text-847F7F">Explore</div>
             <Link href="/" className="text-white block pt-4">Home</Link>
-            <Link href="/portfolio" className="text-white block pt-2">Work</Link>
+            <Link href="/portfolio/" className="text-white block pt-2">Work</Link>
             <Link href="/services" className="text-white block pt-2">Services</Link>
             <Link href="/careers" className="text-white block pt-2">
               Careers

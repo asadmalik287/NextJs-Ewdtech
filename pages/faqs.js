@@ -8,7 +8,7 @@ export default function Faqs() {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://ewdtech.com/faqs" />
+        <link rel="canonical" href="https://ewdtech.com/faqs/" />
         <title>FAQs – EWDTech | Web Development & Digital Marketing Questions</title>
         <meta
           name="description"

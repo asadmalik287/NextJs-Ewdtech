@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+// import faisalhanif from '../../public/assets'
 import { usePathname } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';

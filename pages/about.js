@@ -26,7 +26,7 @@ export default function About() {
 
         <link
           rel="canonical"
-          href="https://ewdtech.com/about"
+          href="https://ewdtech.com/about/"
         />
       </Head>
 

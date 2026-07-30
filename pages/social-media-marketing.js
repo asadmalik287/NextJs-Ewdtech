@@ -26,7 +26,7 @@ export default function Social() {
 
         <link
           rel="canonical"
-          href="https://ewdtech.com/social-media-marketing"
+          href="https://ewdtech.com/social-media-marketing/"
         />
       </Head>
 

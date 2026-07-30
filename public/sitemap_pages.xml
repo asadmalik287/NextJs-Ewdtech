@@ -8,19 +8,19 @@
 </url>
 
 <url>
-<loc>https://ewdtech.com/about</loc>
+<loc>https://ewdtech.com/about/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/contact-us</loc>
+<loc>https://ewdtech.com/contact-us/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/services</loc>
+<loc>https://ewdtech.com/services/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
 </url>
@@ -28,49 +28,49 @@
 <!-- Primary Services -->
 
 <url>
-<loc>https://ewdtech.com/seo-services</loc>
+<loc>https://ewdtech.com/seo-services/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/ecommerce-development</loc>
+<loc>https://ewdtech.com/ecommerce-development/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/shopify-development-agency</loc>
+<loc>https://ewdtech.com/shopify-development-agency/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/branding-services</loc>
+<loc>https://ewdtech.com/branding-services/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/social-media-marketing</loc>
+<loc>https://ewdtech.com/social-media-marketing/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/web-development-services</loc>
+<loc>https://ewdtech.com/web-development-services/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/ppc-management-services</loc>
+<loc>https://ewdtech.com/ppc-management-services/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/lead-generation-services</loc>
+<loc>https://ewdtech.com/lead-generation-services/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -78,25 +78,25 @@
 <!-- Secondary Pages -->
 
 <url>
-<loc>https://ewdtech.com/portfolio</loc>
+<loc>https://ewdtech.com/portfolio/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/clients</loc>
+<loc>https://ewdtech.com/clients/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/careers</loc>
+<loc>https://ewdtech.com/careers/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://ewdtech.com/blogs</loc>
+<loc>https://ewdtech.com/blogs/</loc>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>

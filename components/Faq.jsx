@@ -126,9 +126,9 @@ export default function Faq() {
 
   return (
     <section className="max-w-4xl mx-auto px-6 py-16">
-      <h2 className="md:text-4xl text-xl text-center font-bold text-gray-900 mb-10">
-        Frequently Asked Questions (FAQs)
-      </h2>
+        <h2 className="md:text-4xl text-xl text-center font-bold text-gray-900 mb-10">
+          Frequently Asked Questions (FAQs)
+        </h2>
 
       <div className="space-y-4 faqs-data">
         {faqsData.map((faq, index) => (

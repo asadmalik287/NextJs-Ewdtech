@@ -35,7 +35,7 @@ const PpcManagement = () => {
 
         <link
           rel="canonical"
-          href="https://ewdtech.com/ppc-management-services"
+          href="https://ewdtech.com/ppc-management-services/"
         />
       </Head>
 

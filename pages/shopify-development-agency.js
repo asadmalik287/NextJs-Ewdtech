@@ -16,7 +16,7 @@ export default function Shopify() {
   return (
     <>
         <Head>
-        <link rel="canonical" href="https://ewdtech.com/shopify-development-agency" />
+        <link rel="canonical" href="https://ewdtech.com/shopify-development-agency/" />
         <title>Shopify Website Development Company | Shopify Experts & Store Setup – EWDTech</title>
         <meta name="description" content="EWDTech offers expert Shopify development services including store setup, custom design, app integration, and optimization to boost sales and grow your ecommerce business." />
       <meta name="keywords" content="Shopify development agency, ecommerce website development USA, Shopify expert for hire, Shopify store development, custom Shopify development" />

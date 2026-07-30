@@ -38,9 +38,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const blog = blogData.find(
-    (item) => slugify(item.title) === params.slug
-  );
+  const blog = blogData.find((item) => slugify(item.title) === params.slug);
 
   if (!blog) {
     return { notFound: true };
@@ -60,21 +58,15 @@ export default function BlogDetail({ blog }) {
       <Head>
         <title>{blog.title}</title>
         <meta name="description" content={blog.shortContent} />
-        <link rel="canonical" href={`https://ewdtech.com/blog/${slug}`} />
+        <link rel="canonical" href={`https://ewdtech.com/blog/${slug}/`} />
       </Head>
 
       <Navbar />
 
-      <Hero
-        pageName=""
-        title="Blog Details"
-        desc=""
-        hiddenDesc="hidden"
-      />
+      <Hero pageName="" title="Blog Details" desc="" hiddenDesc="hidden" />
 
       <div className="container m-auto pt-[80px] px-5">
         <div className="md:flex gap-[24px]">
-
           {/* LEFT */}
           <div className="md:w-8/12">
             <Image
@@ -128,7 +120,13 @@ export default function BlogDetail({ blog }) {
 
                     <div className="p-3">
                       <div className="flex items-center">
-                        <Image src={calendar} width={16} height={16} className="w-4" alt="calendar" />
+                        <Image
+                          src={calendar}
+                          width={16}
+                          height={16}
+                          className="w-4"
+                          alt="calendar"
+                        />
                         <span className="text-[12px] text-[#475467] pl-[12px]">
                           {item.date}
                         </span>
@@ -144,7 +142,13 @@ export default function BlogDetail({ blog }) {
 
                       <div className="bg-[#10171E] w-fit hover:bg-yellow-500 text-white rounded-lg mt-[12px] font-semibold py-2 px-4 flex items-center">
                         Read More
-                        <Image alt="arrow" className="w-3 ml-2" src={righticonwhite} width={12} height={12} />
+                        <Image
+                          alt="arrow"
+                          className="w-3 ml-2"
+                          src={righticonwhite}
+                          width={12}
+                          height={12}
+                        />
                       </div>
                     </div>
                   </div>
@@ -152,7 +156,6 @@ export default function BlogDetail({ blog }) {
               ))}
             </div>
           </div>
-
         </div>
       </div>
 

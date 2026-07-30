@@ -36,7 +36,7 @@ export default function Blogs() {
     
       {/* SEO (App Router alternative) */}
       <Head>
-        <link rel="canonical" href="https://ewdtech.com/blogs" />
+        <link rel="canonical" href="https://ewdtech.com/blogs/" />
         <title>EWDTech Blog – Digital Marketing, SEO & Tech Insights</title>
         <meta name="description" content="Explore expert articles and insights on digital marketing, SEO strategies, web development,
 UX/UI trends, and technology updates on the EWDTech blog." />

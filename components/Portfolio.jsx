@@ -13,7 +13,7 @@ export const Portfolio = () => {
           {/* <Lightroom images={images} settings={settings} /> */}
         </div>
         <div className="px-3 text-center mt-12">
-          <Link href="/portfolio">
+          <Link href="/portfolio/">
             <button className=" bg-16A085 bold-font text-white  md:w-auto sm:w-auto w-auto uppercase  font-semibold  px-7 py-4 text-center">
               Our Work
             </button>

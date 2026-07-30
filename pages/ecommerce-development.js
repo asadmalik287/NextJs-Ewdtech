@@ -23,7 +23,7 @@ export const metadata = {
     "ecommerce solutions USA",
   ],
   alternates: {
-    canonical: "https://ewdtech.com/ecommerce-development",
+    canonical: "https://ewdtech.com/ecommerce-development/",
   },
 };
 

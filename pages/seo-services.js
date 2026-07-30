@@ -35,7 +35,7 @@ export default function Seo() {
 
         <link
           rel="canonical"
-          href="https://ewdtech.com/seo-services"
+          href="https://ewdtech.com/seo-services/"
         />
       </Head>
 

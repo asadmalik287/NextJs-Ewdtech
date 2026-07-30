@@ -1,35 +1,33 @@
-
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import dynamic from 'next/dynamic';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
 
 const PopupWidget = dynamic(
-  () => import('react-calendly').then(mod => mod.PopupWidget),
-  { ssr: false }
+  () => import("react-calendly").then((mod) => mod.PopupWidget),
+  { ssr: false },
 );
 
-
-const logo = '/assets/images/logo.webp';
+const logo = "/assets/images/logo.webp";
 
 export const Navbar = ({ navClass }) => {
-  const [backgroundColor, setBackgroundColor] = useState('bg-transparent');
-  const [showDropDown, setShowDropDown] = useState('hidden');
-  const [menu, setMenu] = useState('hidden');
+  const [backgroundColor, setBackgroundColor] = useState("bg-transparent");
+  const [showDropDown, setShowDropDown] = useState("hidden");
+  const [menu, setMenu] = useState("hidden");
 
   const pathname = usePathname();
 
   useEffect(() => {
     const scrollFunction = () => {
       if (window.scrollY > 20) {
-        setBackgroundColor('bg-black');
+        setBackgroundColor("bg-black");
       } else {
-        setBackgroundColor('bg-transparent');
+        setBackgroundColor("bg-transparent");
       }
     };
 
-    window.addEventListener('scroll', scrollFunction);
-    return () => window.removeEventListener('scroll', scrollFunction);
+    window.addEventListener("scroll", scrollFunction);
+    return () => window.removeEventListener("scroll", scrollFunction);
   }, []);
   return (
     <React.Fragment>
@@ -48,7 +46,9 @@ export const Navbar = ({ navClass }) => {
               >
                 <PopupWidget
                   url="https://calendly.com/faisaal-279/30min"
-                  rootElement={typeof window !== 'undefined' ? document.body : undefined}
+                  rootElement={
+                    typeof window !== "undefined" ? document.body : undefined
+                  }
                   text="Let’s Talk"
                   textColor="#ffffff"
                   color="#16A085"
@@ -65,7 +65,7 @@ export const Navbar = ({ navClass }) => {
               <span className="sr-only">Open main menu</span>
               <svg
                 onClick={() => {
-                  menu === 'hidden' ? setMenu('show') : setMenu('hidden');
+                  menu === "hidden" ? setMenu("show") : setMenu("hidden");
                 }}
                 className="w-6 h-6"
                 aria-hidden="true"
@@ -86,13 +86,13 @@ export const Navbar = ({ navClass }) => {
             id="navbar-sticky"
           >
             <ul className="flex flex-col md:flex-row md:space-x-8">
-
               {/* About */}
               <li>
                 <Link
                   href="/about"
-                  className={`uppercase px-2 text-base font-medium ${pathname === '/about' ? 'text-[#16A085]' : 'text-white'
-                    }`}
+                  className={`uppercase px-2 text-base font-medium ${
+                    pathname === "/about" ? "text-[#16A085]" : "text-white"
+                  }`}
                 >
                   About
                 </Link>
@@ -102,8 +102,9 @@ export const Navbar = ({ navClass }) => {
               <li>
                 <Link
                   href="/blogs"
-                  className={`uppercase px-2 text-base font-medium ${pathname === '/blogs' ? 'text-[#16A085]' : 'text-white'
-                    }`}
+                  className={`uppercase px-2 text-base font-medium ${
+                    pathname === "/blogs" ? "text-[#16A085]" : "text-white"
+                  }`}
                 >
                   Blogs
                 </Link>
@@ -112,8 +113,8 @@ export const Navbar = ({ navClass }) => {
               {/* Services Dropdown */}
               <li
                 className="relative"
-                onMouseEnter={() => setShowDropDown('block')}
-                onMouseLeave={() => setShowDropDown('hidden')}
+                onMouseEnter={() => setShowDropDown("block")}
+                onMouseLeave={() => setShowDropDown("hidden")}
               >
                 <button className="flex items-center text-white uppercase px-2">
                   Services
@@ -121,19 +122,44 @@ export const Navbar = ({ navClass }) => {
                 </button>
 
                 <div className={`absolute pt-4 ${showDropDown}`}>
-                  <ul className="bg-white text-black p-3 shadow-lg">
-
-                    <li><Link href="/seo-services">SEO</Link></li>
-                    <li><Link href="/ecommerce-development">Ecommerce</Link></li>
-                    <li><Link href="/shopify-development-agency">Shopify</Link></li>
-                    <li><Link href="/branding-services">Branding</Link></li>
-                    <li><Link href="/social-media-marketing">Social</Link></li>
-                    <li><Link href="/web-development-services">Website Design
-                      & Development
-                    </Link></li>
-                    <li><Link href="/ppc-management-services">PPC MANAGEMENT</Link></li>
-                    <li><Link href="/lead-generation-services">LEAD GENERATION</Link></li>
-
+                  <ul className="bg-white text-black p-3 shadow-lg whitespace-nowrap">
+                    <li>
+                      <Link href="/seo-services/">SEO</Link>
+                    </li>
+                    <li>
+                      <Link href="/ecommerce-development/">Ecommerce</Link>
+                    </li>
+                    <li>
+                      <Link href="/shopify-development-agency/">Shopify</Link>
+                    </li>
+                    <li>
+                      <Link href="/branding-services/">Branding</Link>
+                    </li>
+                    <li>
+                      <Link href="/social-media-marketing/">
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/ui-ux-design/">
+                        UI/UX Design
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/web-development-services/">
+                        Website Design & Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/ppc-management-services/">
+                        PPC Management
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/lead-generation-services/">
+                        Lead Generation
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -141,9 +167,10 @@ export const Navbar = ({ navClass }) => {
               {/* Portfolio */}
               <li>
                 <Link
-                  href="/portfolio"
-                  className={`uppercase px-2 text-base font-medium ${pathname === '/portfolio' ? 'text-[#16A085]' : 'text-white'
-                    }`}
+                  href="/portfolio/"
+                  className={`uppercase px-2 text-base font-medium ${
+                    pathname === "/portfolio" ? "text-[#16A085]" : "text-white"
+                  }`}
                 >
                   Our Work
                 </Link>
@@ -160,8 +187,9 @@ export const Navbar = ({ navClass }) => {
               <li>
                 <Link
                   href="/contact-us"
-                  className={`uppercase px-2 text-base font-medium ${pathname === '/contact-us' ? 'text-[#16A085]' : 'text-white'
-                    }`}
+                  className={`uppercase px-2 text-base font-medium ${
+                    pathname === "/contact-us" ? "text-[#16A085]" : "text-white"
+                  }`}
                 >
                   Contact Us
                 </Link>
@@ -171,18 +199,18 @@ export const Navbar = ({ navClass }) => {
               <div className="md:hidden mt-4">
                 <PopupWidget
                   url="https://calendly.com/faisaal-279/30min"
-                  rootElement={typeof window !== 'undefined' ? document.body : undefined}
+                  rootElement={
+                    typeof window !== "undefined" ? document.body : undefined
+                  }
                   text="Let’s Talk"
                   textColor="#ffffff"
                   color="#16A085"
                 />
               </div>
-
             </ul>
           </div>
         </div>
       </nav>
-
     </React.Fragment>
   );
 };

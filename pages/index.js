@@ -1,17 +1,17 @@
 // pages/index.js
-import Head from 'next/head';
-import { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/homecomponents/Hero';
-import { BookMeeting } from '../components/homecomponents/BookMeeting';
-import { Lead } from '../components/homecomponents/Lead';
-import { ClientLogos } from '../components/homecomponents/ClientLogos';
-import { GetInspired } from '../components/homecomponents/GetInspired';
-import { OurServices } from '../components/homecomponents/OurServices';
-import { Reviews } from '../components/homecomponents/Reviews';
-import { Portfolio } from '../components/Portfolio';
-import { FooterForm } from '../components/FooterForm';
-import { Footer } from '../components/Footer';
+import Head from "next/head";
+import { useState, useEffect } from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/homecomponents/Hero";
+import { BookMeeting } from "../components/homecomponents/BookMeeting";
+import { Lead } from "../components/homecomponents/Lead";
+import { ClientLogos } from "../components/homecomponents/ClientLogos";
+import { GetInspired } from "../components/homecomponents/GetInspired";
+import { OurServices } from "../components/homecomponents/OurServices";
+import { Reviews } from "../components/homecomponents/Reviews";
+import { Portfolio } from "../components/Portfolio";
+import { FooterForm } from "../components/FooterForm";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,8 +24,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://ewdtech.com" />
-        <title>EWDTech – Full-Service Web Development & SEO Agency for Business Growth</title>
+        <link rel="canonical" href="https://ewdtech.com/" />
+        <title>
+          EWDTech – Full-Service Web Development & SEO Agency for Business
+          Growth
+        </title>
         <meta
           name="description"
           content="Looking to grow your business online? EWDTech offers professional web development, SEO, PPC, and digital marketing services to boost traffic, leads, and sales."
@@ -45,7 +48,7 @@ export default function Home() {
       )}
 
       {/* ✅ Real content always in DOM — visible to crawlers immediately */}
-      <div className={isLoading ? 'invisible' : 'visible'}>
+      <div className={isLoading ? "invisible" : "visible"}>
         <Navbar />
         <section className="relative banner-home-bg video-main-banner">
           <div className="absolute flex items-center justify-center h-full w-full">

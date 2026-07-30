@@ -17,7 +17,7 @@ export default function Branding() {
     return (
         <>
             <Head>
-                <link rel="canonical" href="https://ewdtech.com/branding-services" />
+                <link rel="canonical" href="https://ewdtech.com/branding-services/" />
                 <title>Professional Branding Services – Logo, Identity & Strategy | EWDTech</title>
                 <meta name="description" content="EWDTech offers professional branding services including logo design, brand identity, and strategy to build a strong and memorable business presence." />
                 <meta name="keywords" content="branding agency for startups, brand identity design services, startup branding USA, logo design agency, creative branding agency USA" />

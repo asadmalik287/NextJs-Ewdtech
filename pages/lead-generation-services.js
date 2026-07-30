@@ -34,7 +34,7 @@ const LeadGeneration = () => {
 
         <link
           rel="canonical"
-          href="https://ewdtech.com/lead-generation-services"
+          href="https://ewdtech.com/lead-generation-services/"
         />
       </Head>
 

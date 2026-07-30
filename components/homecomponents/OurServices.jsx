@@ -113,7 +113,7 @@ export const OurServices = () => {
             </div>
           </section>
           <div className="flex mt-9 justify-center">
-            <Link href="/portfolio" className="home-hero-btn ">
+            <Link href="/portfolio/" className="home-hero-btn ">
               <button className=" bg-white bold-font uppercase lg:w-60 md:w-auto sm:w-auto w-auto font-semibold  px-7 py-4 text-center mr-3">
                 Our Work
               </button>

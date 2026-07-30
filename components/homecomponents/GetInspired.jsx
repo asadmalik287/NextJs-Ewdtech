@@ -78,15 +78,15 @@ export const GetInspired = ({ desc }) => {
                 </p>
                 <div className="flex pt-4">
                   <div>
-                    <h2 className="text-2xl text-white bold-font">75%</h2>
+                    <p className="text-2xl text-white bold-font">75%</p>
                     <p className="text-white">ROI Increase</p>
                   </div>
                   <div className="pl-8">
-                    <h2 className="text-2xl text-white bold-font">85%</h2>
+                    <p className="text-2xl text-white bold-font">85%</p>
                     <p className="text-white">Conversion Rate</p>
                   </div>
                   <div className="pl-8">
-                    <h2 className="text-2xl text-white bold-font">25%</h2>
+                    <p className="text-2xl text-white bold-font">25%</p>
                     <p className="text-white">Cost Per Lead</p>
                   </div>
                 </div>
@@ -111,15 +111,15 @@ export const GetInspired = ({ desc }) => {
                 </p>
                 <div className="flex pt-4">
                   <div>
-                    <h2 className="text-2xl text-white bold-font">75%</h2>
+                    <p className="text-2xl text-white bold-font">75%</p>
                     <p className="text-white">ROI Increase</p>
                   </div>
                   <div className="pl-8">
-                    <h2 className="text-2xl text-white bold-font">85%</h2>
+                    <p className="text-2xl text-white bold-font">85%</p>
                     <p className="text-white">Conversion Rate</p>
                   </div>
                   <div className="pl-8">
-                    <h2 className="text-2xl text-white bold-font">25%</h2>
+                    <p className="text-2xl text-white bold-font">25%</p>
                     <p className="text-white">Cost Per Lead</p>
                   </div>
                 </div>
@@ -144,15 +144,15 @@ export const GetInspired = ({ desc }) => {
                 </p>
                 <div className="flex pt-4">
                   <div>
-                    <h2 className="text-2xl text-white bold-font">75%</h2>
+                    <p className="text-2xl text-white bold-font">75%</p>
                     <p className="text-white">ROI Increase</p>
                   </div>
                   <div className="pl-8">
-                    <h2 className="text-2xl text-white bold-font">85%</h2>
+                    <p className="text-2xl text-white bold-font">85%</p>
                     <p className="text-white">Conversion Rate</p>
                   </div>
                   <div className="pl-8">
-                    <h2 className="text-2xl text-white bold-font">25%</h2>
+                    <p className="text-2xl text-white bold-font">25%</p>
                     <p className="text-white">Cost Per Lead</p>
                   </div>
                 </div>

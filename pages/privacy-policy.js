@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/contactuscomponents/Hero";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
@@ -12,26 +13,34 @@ export default function PrivacyPolicy() {
           name="description"
           content="Read EWDTech's Privacy Policy to understand how we collect, use, and protect your personal information."
         />
-        <link rel="canonical" href="https://ewdtech.com/privacy-policy" />
+        <link rel="canonical" href="https://ewdtech.com/privacy-policy/" />
       </Head>
 
       <Hero pageName="" title="Privacy Policy" desc="" hiddenDesc="hidden" />
 
       <section className="container m-auto pt-[80px] text-gray-700">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h2>
-        <p className="text-sm text-gray-500 mb-10">Last updated: February 2026</p>
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          Privacy Policy
+        </h2>
+        <p className="text-sm text-gray-500 mb-10">
+          Last updated: February 2026
+        </p>
 
         <p className="mb-6">
-          EWDTech ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy
-          explains how we collect, use, disclose, and safeguard your information when you visit our
-          website or use our services.
+          <Link href="/">EWDTech</Link> ("we", "our", "us") is committed to
+          protecting your privacy. This Privacy Policy explains how we collect,
+          use, disclose, and safeguard your information when you visit our
+          website or use our
+          <Link href="/services">services</Link>.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
           Information We Collect
         </h2>
 
-        <h3 className="text-lg font-semibold mt-6 mb-2">Personal Information</h3>
+        <h3 className="text-lg font-semibold mt-6 mb-2">
+          Personal Information
+        </h3>
         <ul className="list-disc pl-6 space-y-2">
           <li>Full Name</li>
           <li>Company Name</li>
@@ -44,8 +53,8 @@ export default function PrivacyPolicy() {
           Automatically Collected Information
         </h3>
         <p>
-          We may collect IP address, browser type, device information, pages visited, and usage
-          behavior through cookies and analytics tools.
+          We may collect IP address, browser type, device information, pages
+          visited, and usage behavior through cookies and analytics tools.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
@@ -59,21 +68,31 @@ export default function PrivacyPolicy() {
           <li>Comply with legal obligations</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">Cookies</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Cookies
+        </h2>
         <p>
-          We use cookies to enhance functionality and analyze traffic. You may disable cookies in
-          your browser, though some features may not work properly.
+          We use cookies to enhance functionality and analyze traffic. You may
+          disable cookies in your browser, though some features may not work
+          properly.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">Data Security</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Data Security
+        </h2>
         <p>
-          We implement industry-standard security measures to protect your information, but no
-          online transmission is completely secure.
+          We implement industry-standard security measures to protect your
+          information, but no online transmission is completely secure.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
+          Contact Us
+        </h2>
         <p className="leading-relaxed">
-          <strong>EWDTech</strong>
+          <strong>
+            {""}
+            <Link href="/">EWDTech</Link>
+          </strong>
           <br />
           6210 Plantation Center Dr Suite 105, Raleigh, NC, 27616 USA
           <br />
@@ -83,7 +102,12 @@ export default function PrivacyPolicy() {
         </p>
       </section>
 
-      <br /><br /><br /><br /><br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </>
   );

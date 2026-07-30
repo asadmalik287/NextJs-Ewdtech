@@ -1,0 +1,47 @@
+# Apache config for the EWDTech Next.js static export (output: 'export').
+#
+# These redirects USED to live in next.config.js, but Next.js silently drops
+# redirects() when output is 'export' -- the build warns:
+#   "rewrites, redirects, and headers are not applied when exporting"
+# so they have to be handled by Apache.
+
+RewriteEngine On
+
+# --- Old /services/<page> URLs -> new top-level URLs -------------------------
+# IMPORTANT: each rule is anchored to one exact path. Do NOT replace these with
+# a wildcard like  RewriteRule ^services/(.*)$ /$1 [R=301,L]
+# because (.*) also matches the EMPTY string, so /services/ would redirect to
+# itself forever and the page dies with ERR_TOO_MANY_REDIRECTS.
+RewriteRule ^services/seo-services/?$               /seo-services/               [R=301,L]
+RewriteRule ^services/ecommerce-development/?$      /ecommerce-development/      [R=301,L]
+RewriteRule ^services/shopify-development-agency/?$ /shopify-development-agency/ [R=301,L]
+RewriteRule ^services/branding-services/?$          /branding-services/          [R=301,L]
+RewriteRule ^services/social-media-marketing/?$     /social-media-marketing/     [R=301,L]
+RewriteRule ^services/web-development-services/?$   /web-development-services/   [R=301,L]
+RewriteRule ^services/ppc-management-services/?$    /ppc-management-services/    [R=301,L]
+RewriteRule ^services/lead-generation-services/?$   /lead-generation-services/   [R=301,L]
+
+# Old UI/UX URL from the pre-Next.js site. It had no redirect, so it was
+# silently serving a soft-404 that looked like the home page -- 5 blog posts
+# were linking straight into it. The blog links are fixed in Logs.json, but
+# external sites may still point here.
+RewriteRule ^services/webdesigndevelopment/?$       /web-development-services/   [R=301,L]
+
+# --- Static export serving ---------------------------------------------------
+DirectoryIndex index.html
+
+# Turn off content negotiation. With MultiViews on, a request for /services/
+# can be "guessed" into another file and cause redirect loops.
+# If the host returns HTTP 500 after deploying, this is the line to delete
+# (some shared hosts don't allow Options in .htaccess).
+Options -MultiViews
+
+# trailingSlash: true means every page is exported as <route>/index.html.
+# Serve those directly instead of relying on Apache's DirectorySlash guessing.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ /$1/index.html [L]
+
+# Real 404s must return 404, not 200. The host is currently serving missing
+# pages with a 200 status, which makes Google index junk URLs.
+ErrorDocument 404 /404.html

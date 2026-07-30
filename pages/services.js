@@ -9,7 +9,8 @@ import { FooterForm } from "../components/FooterForm";
 import { Footer } from "../components/Footer";
 import { CeoMessage } from "../components/servicescomponents/CeoMessage";
 import { OurServices } from "../components/servicescomponents/OurServices";
-const servicesSec2Image = "../public/images/services-1.webp";
+import servicesSec2Image from "../public/assets/images/services-1.webp";
+import faisalhanif from "../public/assets/images/faisal-hanif.webp";
 
 export default function Services() {
   return (
@@ -20,7 +21,7 @@ export default function Services() {
           name="description"
           content="Explore EWDTech's full range of services including SEO, web design, ecommerce, PPC, branding, and digital marketing solutions for your business."
         />
-        <link rel="canonical" href="https://ewdtech.com/services" />
+        <link rel="canonical" href="https://ewdtech.com/services/" />
       </Head>
 
       <Navbar />

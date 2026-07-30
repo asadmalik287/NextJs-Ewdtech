@@ -29,7 +29,7 @@ export default function Careers() {
           name="description"
           content="Explore career opportunities at EWDTech. Join our team of innovators in web development, digital marketing, design, and more."
         />
-        <link rel="canonical" href="https://ewdtech.com/careers" />
+        <link rel="canonical" href="https://ewdtech.com/careers/" />
       </Head>
 
       <Navbar />
