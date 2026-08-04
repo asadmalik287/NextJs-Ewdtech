@@ -7,7 +7,7 @@ const PopupWidget = dynamic(
   () => import("react-calendly").then((mod) => mod.PopupWidget),
   { ssr: false },
 );
-
+  
 const logo = "/assets/images/logo.webp";
 
 export const Navbar = ({ navClass }) => {
