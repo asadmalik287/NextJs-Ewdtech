@@ -141,9 +141,9 @@ export const Navbar = ({ navClass }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/ui-ux-design/">
+                      {/* <Link href="/ui-ux-design/">
                         UI/UX Design
-                      </Link>
+                      </Link> */}
                     </li>
                     <li>
                       <Link href="/web-development-services/">

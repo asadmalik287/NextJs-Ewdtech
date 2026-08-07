@@ -27,8 +27,13 @@ export default function Blogs() {
       .replace(/--+/g, "-");
   };
 
+  const dateValue = (blog) => {
+    const parsed = new Date(blog?.date).getTime();
+    return Number.isNaN(parsed) ? -Infinity : parsed;
+  };
+
   useEffect(() => {
-    setBlogs(blogData);
+    setBlogs([...blogData].sort((a, b) => dateValue(b) - dateValue(a)));
   }, []);
 
   return (
