@@ -1,6 +1,7 @@
-"use client";
+"use client"; // You can keep or remove this line in Pages Router, but next/head works either way
 
 import React from "react";
+import Head from "next/head"; // 1. Import Head from next/head
 import Navbar from "../components/Navbar";
 import { Hero } from "../components/contactuscomponents/Hero";
 import { FooterForm } from "../components/FooterForm";
@@ -76,6 +77,7 @@ export const Clients = () => {
       clientImage: client8,
     },
   ];
+
   const settings = {
     infinite: true,
     speed: 1000,
@@ -90,6 +92,16 @@ export const Clients = () => {
 
   return (
     <>
+      {/* 2. ADD THIS HEAD BLOCK HERE */}
+      <Head>
+        <title>Our Clients | EWD Tech</title>
+        <meta
+          name="description"
+          content="Explore the brands, startups, and companies that trust EWD Tech for UI/UX design, web, and software development."
+        />
+        <link rel="canonical" href="https://ewdtech.com/clients/" />
+      </Head>
+
       <Navbar />
 
       <Hero
@@ -146,4 +158,5 @@ export const Clients = () => {
     </>
   );
 };
-export default Clients; // ← Add this
+
+export default Clients;

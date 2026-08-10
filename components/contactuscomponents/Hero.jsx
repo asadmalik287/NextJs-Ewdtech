@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar';
-export const Hero = ({pageName, title, desc, hiddenDesc,classBg}) => {
+
+// Add `as: Tag = "h1"` to the props destructuring here:
+export const Hero = ({ pageName, title, desc, hiddenDesc, classBg, as: Tag = "h1" }) => {
   return (
     <React.Fragment>
       <section className={`contactus-bg ${classBg}`}>
@@ -9,11 +11,13 @@ export const Hero = ({pageName, title, desc, hiddenDesc,classBg}) => {
           <h3 className="text-2xl uppercase text-white opacity-70 text-center font-thin">
             {pageName}
           </h3>
-          <h1 className="text-white  lg:w-8/12 m-auto text-center text-5xl mainTitleBanners font-black text-center pt-8">
+
+          <Tag className="text-white lg:w-8/12 m-auto text-center text-5xl mainTitleBanners font-black text-center pt-8">
             {title}
-          </h1>
+          </Tag>
+
           <p
-            className={` ${hiddenDesc} pt-6 banner-para text-white opacity-70 text-2xl md:w-6/12  m-auto text-center`}
+            className={` ${hiddenDesc} pt-6 banner-para text-white opacity-70 text-2xl md:w-6/12 m-auto text-center`}
           >
             {desc}
           </p>

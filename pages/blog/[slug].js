@@ -63,7 +63,7 @@ export default function BlogDetail({ blog }) {
 
       <Navbar />
 
-      <Hero pageName="" title="Blog Details" desc="" hiddenDesc="hidden" />
+      <Hero pageName="" title="Blog Details" desc="" hiddenDesc="hidden" as="p" />
 
       <div className="container m-auto pt-[80px] px-5">
         <div className="md:flex gap-[24px]">

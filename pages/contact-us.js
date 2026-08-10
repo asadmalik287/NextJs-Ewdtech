@@ -13,6 +13,7 @@ export const Contactus = () => {
           name="description"
           content="Contact EWDTech for web design, SEO, ecommerce, branding, and digital marketing services."
         />
+         <link rel="canonical" href="https://ewdtech.com/contact-us/" />
       </Head>
 
       <Hero
