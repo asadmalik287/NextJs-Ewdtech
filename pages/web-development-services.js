@@ -20,10 +20,7 @@ const Webdesigndevelopment = () => {
   return (
     <>
       <Head>
-        <title>
-          Website Design & Development Company | Custom & Responsive Web
-          Solutions – EWDTech
-        </title>
+        <title>Website Design & Development Company | EWDTech</title>
 
         <meta
           name="description"

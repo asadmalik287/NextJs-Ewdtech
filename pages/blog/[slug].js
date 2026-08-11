@@ -103,7 +103,10 @@ export default function BlogDetail({ blog }) {
                 Recent Posts
               </h3>
 
-              {blogData.slice(0, 4).map((item, index) => (
+              {blogData
+                .filter((item) => slugify(item.title) !== slug)
+                .slice(0, 4)
+                .map((item, index) => (
                 <Link
                   key={index}
                   href={`/blog/${slugify(item.title)}`}

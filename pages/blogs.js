@@ -38,28 +38,24 @@ export default function Blogs() {
 
   return (
     <>
-    
       {/* SEO (App Router alternative) */}
       <Head>
         <link rel="canonical" href="https://ewdtech.com/blogs/" />
         <title>EWDTech Blog – Digital Marketing, SEO & Tech Insights</title>
-        <meta name="description" content="Explore expert articles and insights on digital marketing, SEO strategies, web development,
-UX/UI trends, and technology updates on the EWDTech blog." />
+        <meta
+          name="description"
+          content="Explore expert articles and insights on digital marketing, SEO strategies, web development,
+UX/UI trends, and technology updates on the EWDTech blog."
+        />
       </Head>
 
       <Navbar />
 
-      <Hero
-        pageName=""
-        title="Our Blogs"
-        desc=""
-        hiddenDesc="hidden"
-      />
+      <Hero pageName="" title="Our Blogs" desc="" hiddenDesc="hidden" />
 
       {/* BLOG GRID */}
       <div className="container m-auto pt-[80px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-
           {blogs.map((blog, index) => (
             <Link
               key={index}
@@ -110,7 +106,6 @@ UX/UI trends, and technology updates on the EWDTech blog." />
               </div>
             </Link>
           ))}
-
         </div>
       </div>
 

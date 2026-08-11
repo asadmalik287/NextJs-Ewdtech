@@ -96,7 +96,6 @@ export const OurServices = () => {
                     key={e.id}
                     className="lg:w-4/12 md:w-6/12 sm:w-full w-full col-Services-home"
                   >
-                    <Link href={e.anchorLink}>
                       <div className="p-5 mainServicesBlock">
                         <img alt="..." src={e.image} />
                         <h3 className="text-lg font-black bold-font pt-4">
@@ -106,7 +105,6 @@ export const OurServices = () => {
                           {e.desc}
                         </p>
                       </div>
-                    </Link>
                   </div>
                 );
               })}

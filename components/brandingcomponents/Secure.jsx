@@ -11,9 +11,9 @@ export const Secure = () => {
         <div className="flex flex-wrap">
           <div className="lg:w-6/12 ">
             <div className="p-8 bg-white h-full">
-              <div className="text-3xl font-black bold-font pt-4">
+              <h2 className="text-3xl font-black bold-font pt-4">
                 More than an agency – So close you’ll think we’re in-house.
-              </div>
+              </h2>
               <div className=" pt-4  m-auto w-full sm:w-full">
                 EWDTEch is a Digital Marketing Agency providing diverse
                 solutions to cater to business issues and simplify processes.
@@ -41,20 +41,20 @@ export const Secure = () => {
             <div className="flex flex-wrap h-full">
               <div className="lg:w-6/12 fourBlockCol1 h-50">
                 <div className="bg-white p-8 h-full flex items-center flex-col justify-center text-center ">
-                  <h4 className="bold-font text-2xl pb-2">BRANDING</h4>
+                  <h3 className="bold-font text-2xl pb-2">BRANDING</h3>
                   <p>Your brand has a story and we know how to tell it.</p>
                 </div>
               </div>
               <div className="lg:w-6/12 fourBlockCol1 h-50 lg:pl-5">
                 <div className="bg-white p-8 h-full flex items-center flex-col justify-center text-center">
-                  <h4 className="bold-font text-2xl pb-2">VISIBILITY</h4>
+                  <h3 className="bold-font text-2xl pb-2">VISIBILITY</h3>
 
                   <p>Your brand will be seen by more of the right people.</p>
                 </div>
               </div>
               <div className="lg:w-6/12 fourBlockCol1 h-50 mt-4">
                 <div className="bg-white p-8 h-full flex items-center  flex-col justify-center text-center">
-                  <h4 className="bold-font text-2xl pb-2">GROWTH</h4>
+                  <h3 className="bold-font text-2xl pb-2">GROWTH</h3>
 
                   <p>
                     Profitable marketing and advertising strategies to boost

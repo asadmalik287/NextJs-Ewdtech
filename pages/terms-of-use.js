@@ -26,10 +26,22 @@ export default function Terms() {
         </p>
 
         <p className="mb-6">
-          By accessing or using the {""}
-          <Link href="/">EWDTech</Link> website and services, you agree to be
-          bound by these Terms & Conditions. If you do not agree, please
-          discontinue use immediately.
+          By accessing or using the{" "}
+          <Link
+            href="/"
+            className="text-[#16A085] font-semibold underline underline-offset-2 hover:text-[#0f7a63]"
+          >
+            EWDTech
+          </Link>{" "}
+          website and{" "}
+          <Link
+            href="/services"
+            className="text-[#16A085] font-semibold underline underline-offset-2 hover:text-[#0f7a63]"
+          >
+            services
+          </Link>
+          , you agree to be bound by these Terms & Conditions. If you do not
+          agree, please discontinue use immediately.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">

@@ -20,18 +20,29 @@ export default function PrivacyPolicy() {
 
       <section className="container m-auto pt-[80px] text-gray-700">
         <h2 className="text-4xl font-bold text-gray-900 mb-6">
-          Privacy Policy
+          Our Commitment to Your Privacy
         </h2>
         <p className="text-sm text-gray-500 mb-10">
           Last updated: February 2026
         </p>
 
         <p className="mb-6">
-          <Link href="/">EWDTech</Link> ("we", "our", "us") is committed to
-          protecting your privacy. This Privacy Policy explains how we collect,
-          use, disclose, and safeguard your information when you visit our
-          website or use our
-          <Link href="/services">services</Link>.
+          <Link
+            href="/"
+            className="text-[#16A085] font-semibold  hover:text-[#0f7a63]"
+          >
+            EWDTech
+          </Link>{" "}
+          ("we", "our", "us") is committed to protecting your privacy. This
+          Privacy Policy explains how we collect, use, disclose, and safeguard
+          your information when you visit our website or use our{" "}
+          <Link
+            href="/services"
+            className="text-[#16A085] font-semibold  hover:text-[#0f7a63]"
+          >
+            services
+          </Link>
+          .
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10 mb-4">
@@ -90,8 +101,12 @@ export default function PrivacyPolicy() {
         </h2>
         <p className="leading-relaxed">
           <strong>
-            {""}
-            <Link href="/">EWDTech</Link>
+            <Link
+              href="/"
+              className="text-[#16A085] font-semibold  hover:text-[#0f7a63]"
+            >
+              EWDTech
+            </Link>
           </strong>
           <br />
           6210 Plantation Center Dr Suite 105, Raleigh, NC, 27616 USA

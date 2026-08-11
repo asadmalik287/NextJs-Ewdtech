@@ -1,11 +1,11 @@
-import React from 'react';
-import {Uiux} from './Uiux';
-import {WebApp} from './WebApp';
-import {MobileApp} from './MobileApp';
-import {Funnels} from './Funnels';
-import {Ecommerce} from './Ecommerce';
+import React from "react";
+import { Uiux } from "./Uiux";
+import { WebApp } from "./WebApp";
+import { MobileApp } from "./MobileApp";
+import { Funnels } from "./Funnels";
+import { Ecommerce } from "./Ecommerce";
 export const OurWork = () => {
-  const [openTab, setOpenTab] = React.useState (1);
+  const [openTab, setOpenTab] = React.useState(1);
   return (
     <React.Fragment>
       <div className="mainMarginTop maindPadding  ">
@@ -16,15 +16,15 @@ export const OurWork = () => {
           <li className="mr-2  last:mr-0 casesTabs text-center w-full mb-2 sm:w-auto md:w-auto md:mb-2">
             <a
               className={
-                'px-9 py-4 tab-items block  font-normal ' +
-                  (openTab === 1 ? 'active' : 'inactive')
+                "px-9 py-4 tab-items block  font-normal " +
+                (openTab === 1 ? "active" : "inactive")
               }
-              onClick={e => {
-                e.preventDefault ();
-                setOpenTab (1);
+              onClick={(e) => {
+                // e.preventDefault ();
+                setOpenTab(1);
               }}
               data-toggle="tab"
-              href="#link1"
+              href="#web-app"
               role="tablist"
             >
               Web App
@@ -33,15 +33,15 @@ export const OurWork = () => {
           <li className="mr-2  last:mr-0 casesTabs text-center w-full mb-2 sm:w-auto md:w-auto md:mb-2">
             <a
               className={
-                'px-9 py-4 block tab-items ' +
-                  (openTab === 2 ? 'active' : 'inactive')
+                "px-9 py-4 block tab-items " +
+                (openTab === 2 ? "active" : "inactive")
               }
-              onClick={e => {
-                e.preventDefault ();
-                setOpenTab (2);
+              onClick={(e) => {
+                // e.preventDefault ();
+                setOpenTab(2);
               }}
               data-toggle="tab"
-              href="#link2"
+              href="#mobile-app"
               role="tablist"
             >
               Mob Apps
@@ -50,15 +50,15 @@ export const OurWork = () => {
           <li className="mr-2  last:mr-0 casesTabs text-center w-full mb-2 sm:w-auto md:w-auto md:mb-2">
             <a
               className={
-                'px-9 py-4 block tab-items ' +
-                  (openTab === 3 ? 'active' : 'inactive')
+                "px-9 py-4 block tab-items " +
+                (openTab === 3 ? "active" : "inactive")
               }
-              onClick={e => {
-                e.preventDefault ();
-                setOpenTab (3);
+              onClick={(e) => {
+                // e.preventDefault ();
+                setOpenTab(3);
               }}
               data-toggle="tab"
-              href="#link3"
+              href="#uiux-design"
               role="tablist"
             >
               UIUX Designing
@@ -67,15 +67,15 @@ export const OurWork = () => {
           <li className="mr-2  last:mr-0 casesTabs text-center w-full mb-2 sm:w-auto md:w-auto md:mb-2">
             <a
               className={
-                'px-9 py-4 block tab-items ' +
-                  (openTab === 4 ? 'active' : 'inactive')
+                "px-9 py-4 block tab-items " +
+                (openTab === 4 ? "active" : "inactive")
               }
-              onClick={e => {
-                e.preventDefault ();
-                setOpenTab (4);
+              onClick={(e) => {
+                // e.preventDefault ();
+                setOpenTab(4);
               }}
               data-toggle="tab"
-              href="#link4"
+              href="#funnel-design"
               role="tablist"
             >
               Funnel Design
@@ -84,15 +84,15 @@ export const OurWork = () => {
           <li className="mr-2  last:mr-0 casesTabs text-center w-full mb-2 sm:w-auto md:w-auto md:mb-2">
             <a
               className={
-                'px-9 py-4 block tab-items ' +
-                  (openTab === 5 ? 'active' : 'inactive')
+                "px-9 py-4 block tab-items " +
+                (openTab === 5 ? "active" : "inactive")
               }
-              onClick={e => {
-                e.preventDefault ();
-                setOpenTab (5);
+              onClick={(e) => {
+                // e.preventDefault ();
+                setOpenTab(5);
               }}
               data-toggle="tab"
-              href="#link4"
+              href="#ecommerce"
               role="tablist"
             >
               E-commerce
@@ -102,19 +102,31 @@ export const OurWork = () => {
         <div className="relative w-full mt-12">
           <div className="flex-auto">
             <div className="tab-content tab-space">
-              <div className={openTab === 1 ? 'block' : 'hidden'} id="link1">
+              <div className={openTab === 1 ? "block" : "hidden"} id="web-app">
                 <WebApp />
               </div>
-              <div className={openTab === 2 ? 'block' : 'hidden'} id="link2">
+              <div
+                className={openTab === 2 ? "block" : "hidden"}
+                id="mobile-app"
+              >
                 <MobileApp />
               </div>
-              <div className={openTab === 3 ? 'block' : 'hidden'} id="link3">
+              <div
+                className={openTab === 3 ? "block" : "hidden"}
+                id="uiux-design"
+              >
                 <Uiux />
               </div>
-              <div className={openTab === 4 ? 'block' : 'hidden'} id="link4">
+              <div
+                className={openTab === 4 ? "block" : "hidden"}
+                id="funnel-design"
+              >
                 <Funnels />
               </div>
-              <div className={openTab === 5 ? 'block' : 'hidden'} id="link5">
+              <div
+                className={openTab === 5 ? "block" : "hidden"}
+                id="ecommerce"
+              >
                 <Ecommerce />
               </div>
             </div>

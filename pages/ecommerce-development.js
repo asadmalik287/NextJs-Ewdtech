@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 import { Hero } from "../components/contactuscomponents/Hero";
 import { GetInspired } from "../components/homecomponents/GetInspired";
@@ -10,26 +11,25 @@ import { SolveNeeds } from "../components/ecommercecomponents/SolveNeeds";
 import { Secure } from "../components/ecommercecomponents/Secure";
 import { TrusedByStories } from "../components/ecommercecomponents/TrusedByStories";
 
-export const metadata = {
-  title:
-    "Ecommerce Website Development Services | Shopify & Custom Stores – EWDTech",
-  description:
-    "EWDTech offers ecommerce website development services including Shopify, WooCommerce, and custom online stores. Build secure, scalable, and high-converting ecommerce websites.",
-  keywords: [
-    "ecommerce website development USA",
-    "Shopify development agency",
-    "WooCommerce development",
-    "custom online store development",
-    "ecommerce solutions USA",
-  ],
-  alternates: {
-    canonical: "https://ewdtech.com/ecommerce-development/",
-  },
-};
-
 export default function Ecommerce() {
   return (
     <>
+      <Head>
+        <title>Ecommerce Website Development Services | EWDTech</title>
+        <meta
+          name="description"
+          content="EWDTech offers ecommerce website development including Shopify, WooCommerce, and custom online stores that are secure, scalable, and high-converting."
+        />
+        <meta
+          name="keywords"
+          content="ecommerce website development USA, Shopify development agency, WooCommerce development, custom online store development, ecommerce solutions USA"
+        />
+        <link
+          rel="canonical"
+          href="https://ewdtech.com/ecommerce-development/"
+        />
+      </Head>
+
       <Navbar />
 
       <Hero

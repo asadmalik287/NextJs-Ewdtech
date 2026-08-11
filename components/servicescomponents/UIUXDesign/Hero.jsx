@@ -14,9 +14,9 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-[#1D1C1C] shadow-[0px_1px_1px_rgba(0,0,0,0.25)] text-center">
       <div className="relative">
         <div className="max-w-[1180px] mx-auto px-[15px] pt-[60px] md:pt-[120px]">
-          <h3 className="text-2xl uppercase text-white opacity-70 text-center font-thin tracking-[5px]">
+          <p className="text-2xl uppercase text-white opacity-70 text-center font-thin tracking-[5px]">
             UI/UX Design Services
-          </h3>
+          </p>
           <h1 className="text-white lg:w-8/12 m-auto text-center text-5xl font-black pt-8 max-[768px]:text-[25px] max-[768px]:leading-[1.2] max-[768px]:pt-[13px]">
             Design Experiences
             <br />

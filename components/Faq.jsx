@@ -120,15 +120,19 @@ const faqsData = [
   },
 ];
 
-export default function Faq() {
-
+export default function Faq({
+  showHeading = true,
+  title = "Common Questions About Our Services",
+}) {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <section className="max-w-4xl mx-auto px-6 py-16">
+      {showHeading && (
         <h2 className="md:text-4xl text-xl text-center font-bold text-gray-900 mb-10">
-          Frequently Asked Questions (FAQs)
+          {title}
         </h2>
+      )}
 
       <div className="space-y-4 faqs-data">
         {faqsData.map((faq, index) => (
@@ -141,6 +145,7 @@ export default function Faq() {
                 setActiveIndex(activeIndex === index ? null : index)
               }
               className="w-full flex justify-between items-center text-left px-6 py-4 bg-gray-50 hover:bg-gray-100 transition"
+              type="button"
             >
               <span className="font-semibold text-gray-900">
                 {faq.question}

@@ -21,6 +21,14 @@ const positions = [
 ];
 
 export default function Careers() {
+  const scrollToApply = (e) => {
+    e.preventDefault();
+    const section = document.getElementById("applynow");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -49,12 +57,12 @@ export default function Careers() {
       />
 
       <section className="mainMarginTop maindPadding">
-        <h5 className="text-md uppercase text-dark text-center">
+        <p className="text-md uppercase text-dark text-center">
           Current openings
-        </h5>
-        <h5 className="text-3xl bold-font uppercase text-center pt-3 font-thin">
+        </p>
+        <h2 className="text-3xl bold-font uppercase text-center pt-3 font-thin">
           Join Our Team
-        </h5>
+        </h2>
         <p className="opacity-70 pt-3 md:w-5/12 m-auto text-center pt-3">
           We are committed to providing an inclusive and welcoming environment
           for everyone. We believe in equality and fairness for all.
@@ -62,17 +70,18 @@ export default function Careers() {
 
         <section className="md:w-8/12 m-auto pt-12">
           {positions.map((e) => (
-            <a
+            <button
               key={e.positionTitle}
-              href="#applynow"
-              className="flex justify-between py-6 border-bottom-8F8F8F"
+              onClick={scrollToApply}
+              type="button"
+              className="flex justify-between py-6 border-bottom-8F8F8F w-full text-left cursor-pointer"
             >
               <div>{e.positionTitle}</div>
               <div className="flex items-center">
                 <div className="pr-4 text-16A085">Apply Now</div>
                 <img src={right} alt="arrow" width={16} height={16} />
               </div>
-            </a>
+            </button>
           ))}
         </section>
 
@@ -89,7 +98,12 @@ export default function Careers() {
       </section>
 
       <CareersServices />
-      <CareerForm desc="Lead Generation Marketing is like playing the chess, where the Queen rules making knights grumble with her tact. Let us revolutionize you and build strategic Lead Generation." />
+      
+      {/* Target element for smooth scroll */}
+      <div id="applynow">
+        <CareerForm desc="Lead Generation Marketing is like playing the chess, where the Queen rules making knights grumble with her tact. Let us revolutionize you and build strategic Lead Generation." />
+      </div>
+
       <Footer />
     </>
   );
