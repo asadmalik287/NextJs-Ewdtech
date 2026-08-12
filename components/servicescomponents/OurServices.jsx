@@ -48,13 +48,13 @@ export const OurServices = () => {
       slug: '/ecommerce-development/',
       desc: 'Our experts will help you develop SEO optimized ecommerce site with user-friendly UX design and in managing the site for effective business yield.',
     },
-    {
-      id: 6,
-      image: dropshipping,
-      title: 'Dropshipping',
-      slug: '/dropshipping-services',
-      desc: 'With our Dropshipping service, we can help you manage the inventory, enabling you to focus on growing your business and increasing your profits.',
-    },
+    // {
+    //   id: 6,
+    //   image: dropshipping,
+    //   title: 'Dropshipping',
+    //   slug: '/dropshipping-services',
+    //   desc: 'With our Dropshipping service, we can help you manage the inventory, enabling you to focus on growing your business and increasing your profits.',
+    // },
     {
       id: 7,
       image: socialmedia,
