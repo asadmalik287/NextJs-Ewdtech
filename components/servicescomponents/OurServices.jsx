@@ -17,7 +17,7 @@ export const OurServices = () => {
       id: 1,
       image: webDesign,
       title: 'Web Design & Development',
-      slug: '/web-design-services', // 👈 Added specific routes
+      slug: '/web-development-services/', 
       desc: "Our team of experienced web designers creates custom websites tailored to each customer's individual needs with user-friendly UX Design.",
     },
     {
@@ -31,7 +31,7 @@ export const OurServices = () => {
       id: 3,
       image: shopify,
       title: 'Shopify Expert',
-      slug: '/shopify-services',
+      slug: '/shopify-development-agency/',
       desc: 'Take your Shopify store to the next level with our expert services. Our team of experienced Shopify experts provides expert guidance, customization, and support to ensure a successful e-commerce experience.',
     },
     {
@@ -45,7 +45,7 @@ export const OurServices = () => {
       id: 5,
       image: ecommerce,
       title: 'E-Commerce',
-      slug: '/ecommerce-services',
+      slug: '/ecommerce-development/',
       desc: 'Our experts will help you develop SEO optimized ecommerce site with user-friendly UX design and in managing the site for effective business yield.',
     },
     {
@@ -59,14 +59,14 @@ export const OurServices = () => {
       id: 7,
       image: socialmedia,
       title: 'Social Media Marketing',
-      slug: '/social-media-services',
+      slug: '/social-media-marketing/',
       desc: 'We shall help you manage your Social Media with optimization, social media marketing and effective Graphics to rank you on top.',
     },
     {
       id: 8,
       image: ppc,
       title: 'PPC Management',
-      slug: '/ppc-services',
+      slug: '/ppc-management-services/',
       desc: 'With our PPC strategy, you can find economical Pay-Per-Click Management on platforms such as Google Ads and Bing Ads with keyword research, ad copy creation, bid management, and performance analysis.',
     },
     {

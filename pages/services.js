@@ -19,7 +19,7 @@ export default function Services() {
         <title>Services – EWDTech | Web Development & Digital Marketing</title>
         <meta
           name="description"
-          content="Custom Web Development Services & Solutions-EWDTECH."
+          content="Explore EWDTech's full range of services including SEO, web design, ecommerce, PPC, branding, and digital marketing solutions for your business."
         />
         <link rel="canonical" href="https://ewdtech.com/services/" />
       </Head>

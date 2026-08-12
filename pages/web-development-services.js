@@ -24,7 +24,7 @@ const Webdesigndevelopment = () => {
 
         <meta
           name="description"
-          content="EWDTech offers professional web design and development services including custom websites, responsive design, and web applications to grow your business online."
+          content="Custom Web Development Services & Solutions-EWDTECH."
         />
 
         <meta

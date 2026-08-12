@@ -7,6 +7,7 @@ import { CareerForm } from "../components/careerForm";
 import { Footer } from "../components/Footer";
 import { CeoMessage } from "../components/servicescomponents/CeoMessage";
 import { CareersServices } from "../components/careersServices";
+
 const seoSec2Image = "/assets/images/services-banner-2nd/clients.webp";
 const right = "/assets/images/right.webp";
 
@@ -23,9 +24,17 @@ const positions = [
 export default function Careers() {
   const scrollToApply = (e) => {
     e.preventDefault();
+
     const section = document.getElementById("applynow");
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+
+      window.history.pushState(null, "", "applynow");
+
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
   };
 
@@ -33,19 +42,23 @@ export default function Careers() {
     <>
       <Head>
         <title>Careers – EWDTech | Join Our Growing Team</title>
+
         <meta
           name="description"
           content="Explore career opportunities at EWDTech. Join our team of innovators in web development, digital marketing, design, and more."
         />
+
         <link rel="canonical" href="https://ewdtech.com/careers/" />
       </Head>
 
       <Navbar />
+
       <Hero
         pageName="new opportunities."
         title="We're Expanding Our Team Grow With Us"
         desc="Innovation, Diligence, and Excellence when it comes to working together, we know a thing or two about teamwork."
       />
+
       <CeoMessage
         title="Innovate and grow with EWDTech"
         hidden="hidden"
@@ -60,10 +73,12 @@ export default function Careers() {
         <p className="text-md uppercase text-dark text-center">
           Current openings
         </p>
+
         <h2 className="text-3xl bold-font uppercase text-center pt-3 font-thin">
           Join Our Team
         </h2>
-        <p className="opacity-70 pt-3 md:w-5/12 m-auto text-center pt-3">
+
+        <p className="opacity-70 pt-3 md:w-5/12 m-auto text-center">
           We are committed to providing an inclusive and welcoming environment
           for everyone. We believe in equality and fairness for all.
         </p>
@@ -77,8 +92,10 @@ export default function Careers() {
               className="flex justify-between py-6 border-bottom-8F8F8F w-full text-left cursor-pointer"
             >
               <div>{e.positionTitle}</div>
+
               <div className="flex items-center">
                 <div className="pr-4 text-16A085">Apply Now</div>
+
                 <img src={right} alt="arrow" width={16} height={16} />
               </div>
             </button>
@@ -89,6 +106,7 @@ export default function Careers() {
           Even if you don't find a suitable position, you can still send your
           resume to
         </div>
+
         <a
           href="mailto:hr@ewdtech.com"
           className="bg-16A085 m-auto mt-6 text-white h-full flex items-center wfc font-semibold px-12 py-4 text-center"
@@ -98,8 +116,8 @@ export default function Careers() {
       </section>
 
       <CareersServices />
-      
-      {/* Target element for smooth scroll */}
+
+      {/* Application Form */}
       <div id="applynow">
         <CareerForm desc="Lead Generation Marketing is like playing the chess, where the Queen rules making knights grumble with her tact. Let us revolutionize you and build strategic Lead Generation." />
       </div>
